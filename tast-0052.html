@@ -19,7 +19,6 @@
 <meta name="robots" content="index,follow" />
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42516611-5"></script>
-<SCRIPT TYPE="text/javascript" SRC="https://tag.readserver.net/tag?section=6589&size=320x50&tree=9OBKGZVN8G&cb=CACHEBUSTER"></SCRIPT>
 <script>
         /**
          * Change Server Iframe Code
@@ -205,6 +204,7 @@
         }
     </style>
 
+       <script type="text/javascript" src="//onvictinitor.com/apu.php?zoneid=2963043" async data-cfasync="false"></script> 
         
 </head>
 <body>
@@ -245,23 +245,25 @@
             $('.server-titles').removeClass('hidden');
         }
     </script>
+<script src="//cdn.jsdelivr.net/gh/clappr/clappr@latest/dist/clappr.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
 <script type="text/javascript">
-            var cu_player = '<video controls="" height="'+$('div#player_custom_min').innerHeight() +'" poster="http://i.imgur.com/hyOHlON.jpg" src="{src}" width="100%"></video>'
+            var cu_player = '<video controls="" height="'+$('div#player_custom_min').innerHeight() +'" poster="https://i.imgur.com/hyOHlON.jpg" src="{src}" width="100%"></video>'
             var mdm = new MobileDetect(window.navigator.userAgent);
         </script>
 <script>
         var isMobile = {
             Android: function() {
-                return navigator.userAgent.match(/IEMobile/i);
+                return navigator.userAgent.match(/Android/i);
             },
             BlackBerry: function() {
-                return navigator.userAgent.match(/IEMobile/i);
+                return navigator.userAgent.match(/BlackBerry/i);
             },
             iOS: function() {
-                return navigator.userAgent.match(/IEMobile/i);
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
             },
             Opera: function() {
-                return navigator.userAgent.match(/IEMobile/i);
+                return navigator.userAgent.match(/Opera Mini/i);
             },
             Windows: function() {
                 return navigator.userAgent.match(/IEMobile/i);
@@ -270,7 +272,7 @@
                 return navigator.userAgent.match(/Macintosh/i);
             },
             any: function() {
-                return navigator.userAgent.match(/IEMobile/i);
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
             }
         };
         var mipsPlayerType = "membedplayer";
