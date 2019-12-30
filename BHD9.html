@@ -47,6 +47,627 @@
                     server = servers[i];
                     break;
                 }
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>موقع كورة ستار للبث المباشر | kora star tv | كوره ستار | ستار كورة | مباريات اليوم  | مشاهدة قناة بي ان سبورت HD9 بث مباشر بدون تقطيع beIN Sport HD9 live</title>
+<link rel="icon" href="https://www.super-kora.tv/front/images/fav.png" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.3.4/css/bootstrap-rtl.min.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="https://www.super-kora.tv/front/css/my_style.css?v=4" rel="stylesheet">
+<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.1/mobile-detect.min.js"></script>
+<script src="https://www.super-kora.tv/front/js/site_action.js?v=2"></script>
+<meta name="copyright" content="SuperKora">
+<meta name="language" content="ar">
+<meta name="robots" content="index,follow" />
+<meta name="author" content="http://www.super-kora.tv">
+<meta name="designer" content="http://www.super-kora.tv">
+<meta name="reply-to" content="http://www.super-kora.tv">
+<meta name="owner" content="http://www.super-kora.tv">
+<meta name="url" content="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd9-live">
+<meta name="identifier-URL" content="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd9-live?embed">
+<meta name="og:email" content="eslam@php-eg.com" />
+<meta name="og:phone_number" content="+201110633086" />
+<meta name="description" content="بث مباشر قناة بي ان سبورت 9 يلا شوت بين سبورت الرياضية HD9 مباشر مشاهدة قناة بيانسبورت بث مباشر bein sport HD9 live stream قناة بي ان سبورت اتش دى 9 هى احدى قنوات باقة بين سبورت الرياضية">
+<meta name="keywords" content="بي ان سبورت HD9, بين سبورت, اتش دى, بث مباشر, بيان سبورت, بينسبورت, مباريات اليوم, يلا شوت, كورة, اون لاين, ستار, لايف, اون لاين">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42516611-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42516611-5');
+</script>
+<meta name="google-site-verification" content="uOduePDfQ93D5emUYkCS9fvESt4IwNIakItc2ohpCi8" />
+<SCRIPT TYPE="text/javascript" SRC="https://tag.readserver.net/tag?section=6589&size=320x50&tree=9OBKGZVN8G&cb=CACHEBUSTER"></SCRIPT>
+<script>
+        /**
+         * Change Server Iframe Code
+         *
+         * @author  Ahmed Saad
+         * @param  serverId
+         */
+        window.changeServerIframeID = function (serverId) {
+            $serverIframeCodeLoader.removeClass('hidden');
+            var text = $serverIframeCodeContent.text();
+            text = text.replace(/\&server=(\d*)/, '&server='+serverId);
+            $serverIframeCodeContent.text(text);
+            $serverIframeCodeLoader.addClass('hidden');
+        };
+
+        /**
+         * Get Server By ID
+         *
+         * @author  Ahmed Saad
+         * @param  servers
+         * @param  serverId
+         */
+        window.getServerById = function (servers, serverId) {
+            var server = null;
+            for (var i = 0; i < servers.length; i++) {
+                if (servers[i].id == serverId) {
+                    server = servers[i];
+                    break;
+                }
+            }
+
+            return server;
+        };
+
+        /**
+         * Create Server Player
+         *
+         * @author  Ahmed Saad
+         * @param  obj
+         * @param  $wrapper jquery Player Wrapper Element
+         * @param  w
+         * @param  h
+         * @param  mipsPlayerType
+         */
+        window.createPlayerFromServerObject = function (obj, $wrapper, w, h, mipsPlayerType) {
+            w = Math.round(w);
+            h = Math.round(h);
+
+            if (obj.type == 0){
+                $wrapper.html(obj.secure_url);
+
+            } else if(obj.type == 3 || obj.type == 4 || obj.type == 5 || obj.type == 6 ||obj.type == 7  ){
+                var g = obj.secure_url[1];
+                var channel = obj.secure_url[0];
+                var isMips = obj.type == 3;
+
+                var   vurl = '';
+                if(obj.type == 3){
+                    vurl = 'http://www.mipsplayer.net/';
+                }else if(obj.type == 4){
+                    vurl = 'http://www.liveflashplayer.org/';
+                }else if(obj.type == 5){
+                    vurl = 'http://www.zenexplayer.com/';
+                }else if(obj.type == 6){
+                    vurl = 'http://www.janjuaplayer.com/';
+                }else if(obj.type == 7){
+                    vurl = 'http://www.247bay.tv/';
+                }else{
+
+                }
+                // var v = '<iframe width="'+w+'" height="'+h+'" scrolling=no frameborder=0 allowtransparency=true allowfullscreen=true marginwidth="0" marginheight="0" src="'+vurl+mipsPlayerType+'/'+channel+'/'+g+'/'+w+'/'+h+'" allowfullscreen></iframe>';
+
+                var src = vurl + mipsPlayerType + '/' + channel + '/' + g + '/' + w + '/' + h + '?autoplay=false';
+
+                var $iframe = $('<iframe>', {
+                    'scrolling': 'no',
+                    'frameborder': '0',
+                    'marginwidth': '0',
+                    'marginheight': '0',
+                    'allowtransparency': true,
+                    'allowfullscreen': true,
+                    'src': src,
+                });
+
+                $iframe.attr('width', w);
+                $iframe.attr('height', h);
+
+                // Fix IMPS on small Screens
+                if (isMips) {
+                    if (h < 240) {
+                        $wrapper.css('min-height', '240px');
+                    }
+
+                    if (w < 360) {
+                        var halfDiff = Math.round((360 - w) / 2);
+
+                        if (halfDiff <= 15) {
+                            $wrapper.css({
+                                'width': (w + (2 * halfDiff)) + 'px',
+                                'margin-left': (-halfDiff) + 'px',
+                                'margin-right': (-halfDiff) + 'px',
+                            });
+                        }
+                    }
+                }
+
+                $wrapper.html($iframe);
+            } else {
+                var id = 'player_custom_min__' + obj.id;
+                $wrapper.html('<div id="'+ id +'" style="margin-bottom: -56.25%"></div>');
+                if (requestPlayer) {
+                    var playerInstance = jwplayer(id);
+                    playerInstance.setup({
+                        file: obj.secure_url,
+                        image: "https://www.super-kora.tv/front/images/logo.png",
+                        mediaid: "xxxxYYYY",
+                        height: h,
+                        width: w,
+                        stretching: "exactfit"
+                    });
+                } else {
+                    if (mdm.mobile()) {
+                        $wrapper.html(cu_player.replace('{src}', obj.secure_url));
+                    } else {
+                        var player = new Clappr.Player({
+                            plugins: [LevelSelector],
+                            autoPlay: true,
+                            width: w,
+                            hlsLogEnabled: false,
+                            mute: false,
+                            height: h,
+                            source: obj.secure_url,
+                            parentId: '#' + id,
+                        });
+                    }
+                }
+            }
+        };
+    </script>
+
+<script src="https://betnetmed.advertserve.com/js/libcode1_noajax.js" type="text/javascript"></script>
+
+<style>
+        html,body{height:100%; width:100%; margin:0;}
+        .h_iframe iframe {width:100%; height:100%;}
+        .h_iframe {
+            height: 100%; width:100%;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .btn.server_links {
+            white-space: normal;
+        }
+
+        .ion-social-rss.orange {
+            color: #ffc000;
+        }
+
+        .relative {
+            position: relative !important;
+        }
+
+        .block-loader {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('/images/ajax-loader-32.gif') no-repeat 50% 50% rgba(250, 250, 250, .85);
+        }
+
+        .block-loader.hidden {
+            display: none;
+        }
+
+        .frame-title {
+            margin-top: 15px;
+        }
+
+        .iframe-block{
+            margin-top: 15px;
+        }
+
+        .server-title{
+            padding: 10px 0;
+            text-align: center;
+            background: #167ac6;
+            margin: 20px 0 10px;
+            color: #fff;
+            border: 1px solid #1362a0;
+            border-radius: 5px;
+        }
+
+        .ad-banner {
+            padding: 0;
+        }
+
+        body, iframe, iframe * {
+            background-color: transparent;
+        }
+
+        .live-chaneel {
+            -webkit-box-shadow: transparent;
+            -moz-box-shadow: transparent;
+            -o-box-shadow: transparent;
+            -ms-box-shadow: transparent;
+            /* box-shadow: transparent; */
+        }
+    </style>
+<link rel="alternate" type="application/rss+xml" href="https://www.super-kora.tv/matchs-feed" title="Matchs">
+<link rel="alternate" type="application/rss+xml" href="https://www.super-kora.tv/championships-feed" title="Championships">
+<link rel="alternate" type="application/rss+xml" href="https://www.super-kora.tv/teams-feed" title="Teams">
+<link rel="alternate" type="application/rss+xml" href="https://www.super-kora.tv/news-feed" title="News">
+</head>
+<body>
+<div style="width: 100%; height: 100%;margin-top: 0px;">
+<div id="mobile-between-servers-ad" class="hidden">
+<div class="ad-banner for_device_2"><center>
+<div style='width:320px; height:50px;display:inline-block;' class='9OBKGZVN8G'></div>
+<a href="https://twitter.com/Kora_Star_tv?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">تــابعنـــا @Kora_Star_tv</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<center /></div>
+</div>
+<div class="live-chaneel">
+<div id="player_custom_min" class="embed-responsive embed-responsive-16by9 h_iframe"></div>
+</div>
+<div class="ad-banner for_device_1"><center>
+<a href="https://twitter.com/Kora_Star_tv?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">تــابعنـــا @Kora_Star_tv</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<button id="refV" name="refV" class="refVideo" onclick="javascript:location.reload();">في حالة توقف البث إضغط هنا لتحديث المشغل</button>
+<div dir="rtl" style="text-align: right;" trbidi="on">
+<div style="text-align: center;">
+<span style="color: #e06666; font-family: " arial" , "helvetica" , sans-serif; font-size: large;"><b>لايك لصفحتنا الجديدة علي الفيس بوك</b></span><br />
+<iframe allow="encrypted-media" allowtransparency="true" frameborder="0" height="35" scrolling="no" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2F%25D9%2585%25D9%2588%25D9%2582%25D8%25B9-%25D9%2583%25D9%2588%25D8%25B1%25D8%25A9-%25D8%25B3%25D8%25AA%25D8%25A7%25D8%25B1-650835082019282%2F&width=450&layout=standard&action=like&size=large&show_faces=false&share=false&height=35&appId" style="border: none; overflow: hidden;" width="450"></iframe></div>
+</div>
+<div dir="rtl" style="text-align: right;" trbidi="on">
+<div style="text-align: center;">
+<b><span style="font-size: large;"><a href="https://tv.kora-star.tv/" target="_blank">كورة ستار</a> : <a href="https://www.super-kora.tv/" target="_blank">سوبر كورة</a></span></b></div>
+</div>
+<center /></div>
+<div class="other-screens-slider owl-carousel owl-theme">
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd11-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/3f/2f3feab06f1155bb11104ac1cb958ad0.png" alt="بي ان سبورت HD11">
+<b>بي ان سبورت HD11</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd10-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/d5/05d52c476eb71cb59ae3b0766a71a1ed.jpeg" alt="بي ان سبورت HD10">
+<b>بي ان سبورت HD10</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd8-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/f2/bdf272fe4f4f6f1b9012937194fcd63a.png" alt="بي ان سبورت HD8">
+<b>بي ان سبورت HD8</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd7-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/e9/2de96a54a67f1ae2311abdb3e5d46d1d.png" alt="بي ان سبورت HD7">
+<b>بي ان سبورت HD7</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd6-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/90/7290d8fb9b8f02c2fd128420d3120443.png" alt="بي ان سبورت HD6">
+<b>بي ان سبورت HD6</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd5-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/11/e61164b566273f148cec2d997d454b9b.png" alt="بي ان سبورت HD5">
+<b>بي ان سبورت HD5</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/beIN-sport-HD1-live-%D8%A8%D9%8A-%D8%A7%D9%86-%D8%B3%D8%A8%D9%88%D8%B1%D8%AA-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/42/1d42079098ef0f286a761497f4ff4184.png" alt="بي ان سبورت HD1">
+<b>بي ان سبورت HD1</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd2-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/8e/e58efeee41b87f14a15d0b64cf665889.png" alt="بي ان سبورت HD2">
+<b>بي ان سبورت HD2</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd3-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/94/b59423ed7c15c3aba4601c120f9f48f5.png" alt="beIN Sport HD3">
+<b>beIN Sport HD3</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-hd4-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/14/0a140a1a1b4e3858ffa4a494d632b475.png" alt="بي ان سبورت HD4">
+<b>بي ان سبورت HD4</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-news-hd-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/2c/412cb7159fbecfdea6aed76d56ce8a2f.png" alt="بي ان سبورت الاخبارية HD">
+<b>بي ان سبورت الاخبارية HD</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-MAX-HD4-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/5c/505c1207f238580343655a77575d5588.png" alt="بي ان سبورت MAX HD4">
+<b>بي ان سبورت MAX HD4</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-MAX-HD3-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/24/c724b33141af5c300b73b43f3f3a5c46.png" alt="بي ان سبورت MAX HD3">
+<b>بي ان سبورت MAX HD3</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-MAX-HD2-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/14/7d1449109af20b34f2fe4d1e1a32800e.png" alt="بي ان سبورت MAX HD2">
+<b>بي ان سبورت MAX HD2</b>
+</figcaption>
+</a>
+</figure>
+</div>
+<div class="item">
+<figure class="other-match-fig">
+<a href="https://www.super-kora.tv/channels/bein-sport/bein-sport-max-1-live?embed">
+<figcaption>
+<img src="https://www.super-kora.tv/cache/c8/88c84f0c21fae13253dadeec0a58a100.png" alt="بي ان سبورت MAX HD1">
+<b>بي ان سبورت MAX HD1</b>
+</figcaption>
+</a>
+</figure>
+</div>
+</div>
+<div class="col-md-8 col-md-offset-2">
+<div class="iframe-block" style="display: none !important;>
+    <p class=" frame-title">
+<h4 class="label label-info">كود القناة</h4>
+</p>
+<code class="iframe-code">
+&lt;iframe width=&quot;100%&quot; height=&quot;2000&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.super-kora.tv/channels/bein-sport/bein-sport-hd9-live?embed&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+</code>
+</div>
+<div class="iframe-block server" style="display: none !important;>
+    <p class=" frame-title">
+<h4 class="label label-info">كود السرفر</h4>
+</p>
+<code class="iframe-code server relative" ">
+<div class="block-loader"></div>
+<span class="content">
+&lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.super-kora.tv/channels/bein-sport/bein-sport-hd9-live?embed&amp;server=&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+</span>
+</code>
+</div> </div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+        var md = new MobileDetect(window.navigator.userAgent);
+        if (md.mobile()) {
+            // Mobile
+            $('.for_device_2').css('display', '');
+            $('.for_device_0').css('display', '');
+            $('.for_device_1').remove();
+
+            // Remove iFrame Code
+            $('.iframe-block').remove();
+        } else {
+            // Web
+            $('.for_device_1').css('display', '');
+            $('.for_device_0').css('display', '');
+            $('.for_device_2').remove();
+
+            // Display iFrame Code
+            $('.iframe-block').css('display', '');
+            $('.server-titles').removeClass('hidden');
+        }
+    </script>
+<script src="//cdn.jsdelivr.net/gh/clappr/clappr@latest/dist/clappr.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+<script type="text/javascript">
+            var cu_player = '<video controls="" height="'+$('div#player_custom_min').innerHeight() +'" poster="https://www.super-kora.tv/front/images/logo.png" src="{src}" width="100%"></video>'
+            var mdm = new MobileDetect(window.navigator.userAgent);
+        </script>
+<script>
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            MacOSX: function() {
+                return navigator.userAgent.match(/Macintosh/i);
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+
+        var mipsPlayerType = "membedplayer";
+        //var mipsPlayerType = "embedplayer";
+        if (!isMobile.any()){
+            var mipsPlayerType = "hembedplayer";
+        }
+
+        var $iframeServerBlock = $('.iframe-block.server');
+        var $serverIframeCode = $('.iframe-code.server');
+        var $serverIframeCodeContent = $serverIframeCode.find('.content');
+        var $serverIframeCodeLoader = $serverIframeCode.find('.block-loader');
+        var serverFrameHeight = $iframeServerBlock.innerHeight() + 15 || 0;
+
+        var requestPlayer = false;
+        
+        var requestServerID = null;
+        
+        var $channelsWrapper = $('.live-chaneel');
+        var $playerWrapper = $('div#player_custom_min');
+        var w = $playerWrapper.innerWidth();
+        var h = $playerWrapper.innerHeight();
+
+        var links = [{"id":473,"title":"\u062c\u0648\u062f\u0629 \u0645\u062a\u0648\u0633\u0637\u0629","url":"<iframe src=\"https:\/\/player.twitch.tv\/?channel=uioood\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" height=\"378\" width=\"620\"><\/iframe>","type":0,"is_active":1,"channel_id":14,"server_type_id":null,"platform":0,"is_default":1,"created_at":"2019-08-26 09:48:26","updated_at":"2019-12-11 20:58:42","secure_url":"<iframe src=\"https:\/\/player.twitch.tv\/?channel=uioood\" frameborder=\"0\" allowfullscreen=\"true\" scrolling=\"no\" height=\"378\" width=\"620\"><\/iframe>"}]
+
+        if (requestServerID) {
+            // When url..&server_id=ID
+
+            // Change iframe server code
+            window.window.changeServerIframeID();
+
+            $playerWrapper.css('height', 'calc(100% - ' + serverFrameHeight + 'px)');
+            h = $playerWrapper.innerHeight() - serverFrameHeight;
+
+            // Get Server Object
+            serverObj = getServerById(links, requestServerID);
+
+            if (!serverObj) {
+                // Not Found Server
+                $playerWrapper.html('<div style="text-align: center">السرفر غير موجود </div>')
+            } else {
+                // Create Server Player
+                window.createPlayerFromServerObject(serverObj, $playerWrapper, w, h, mipsPlayerType);
+            }
+        } else {
+            // Not url..&server_id=ID
+            if (mdm.mobile()) {
+                // Mobile View
+
+                var $mobileAdBlock = $('#mobile-between-servers-ad');
+                var $mobileAd = $mobileAdBlock.html();
+                $mobileAdBlock.remove();
+
+                links = links.sort(function(a, b) {
+                    if (a.is_default > b.is_default) {
+                        return -1;
+                    } else if (a.is_default < b.is_default) {
+                        return 1;
+                    } else {
+                        return 0;
+                    }
+                });
+
+                links.forEach(function(obj, i) {
+                    if (obj.platform != 1) {
+                        $playerWrapper.hide();
+                        var $newPlayerWrapper = $playerWrapper.clone().show().appendTo($channelsWrapper);
+                        $newPlayerWrapper.attr('id', $newPlayerWrapper.attr('id') + '_' + obj.id);
+                        var $header = $('<DIV>', {'class': 'server-title'}).append('<h4>'+ obj.title +'</h4>');
+                        $newPlayerWrapper.before($header);
+
+                        // Insert Mobile Ad After Server
+                        $newPlayerWrapper.after($mobileAd);
+
+                        // Create Player
+                        window.createPlayerFromServerObject(obj, $newPlayerWrapper, w, h, mipsPlayerType);
+                    }
+                });
+            } else {
+                // Web View
+                $('a.server_links').click(function(e){
+
+                    $('a.server_links').removeClass('active');
+                    $(this).addClass('active');
+
+                    // Change Server iFrame code
+                    window.changeServerIframeID(e.target.dataset.serverId);
+
+                    var obj = links[$(this).attr('rel')];
+                    window.createPlayerFromServerObject(obj, $playerWrapper, w, h, mipsPlayerType);
+                });
+
+                if (links.length <= 1) {
+                    // Only One Server Exists
+                    var obj = links[0];
+                    window.createPlayerFromServerObject(obj, $playerWrapper, w, h, mipsPlayerType);
+                } else {
+                    // For multiple servers Select Default
+                    if ($('a.server_links.def_1').is(":visible")) {
+                        $('a.server_links.def_1').trigger('click');
+                    } else {
+                        $('a.server_links:first').trigger('click');
+                    }
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
+
             }
 
             return server;
