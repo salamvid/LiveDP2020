@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,7 +12,7 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.3.4/css/bootstrap-rtl.min.css" rel="stylesheet">
 <link href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
-<link href="https://www.super-kora.tv/front/css/my_style.css?v=4" rel="stylesheet">
+<link href="https://raw.githack.com/salamvid/LiveDP2020/master/my_style.css?v=4" rel="stylesheet">
 <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.1/mobile-detect.min.js"></script>
 <script src="https://www.super-kora.tv/front/js/site_action.js?v=2"></script>
@@ -35,7 +34,6 @@
             $serverIframeCodeContent.text(text);
             $serverIframeCodeLoader.addClass('hidden');
         };
-
         /**
          * Get Server By ID
          *
@@ -51,10 +49,8 @@
                     break;
                 }
             }
-
             return server;
         };
-
         /**
          * Create Server Player
          *
@@ -68,15 +64,12 @@
         window.createPlayerFromServerObject = function (obj, $wrapper, w, h, mipsPlayerType) {
             w = Math.round(w);
             h = Math.round(h);
-
             if (obj.type == 0){
                 $wrapper.html(obj.secure_url);
-
             } else if(obj.type == 3 || obj.type == 4 || obj.type == 5 || obj.type == 6 ||obj.type == 7  ){
                 var g = obj.secure_url[1];
                 var channel = obj.secure_url[0];
                 var isMips = obj.type == 3;
-
                 var   vurl = '';
                 if(obj.type == 3){
                     vurl = 'http://www.mipsplayer.net/';
@@ -89,12 +82,9 @@
                 }else if(obj.type == 7){
                     vurl = 'http://www.247bay.tv/';
                 }else{
-
                 }
                 // var v = '<iframe width="'+w+'" height="'+h+'" scrolling=no frameborder=0 allowtransparency=true allowfullscreen=true marginwidth="0" marginheight="0" src="'+vurl+mipsPlayerType+'/'+channel+'/'+g+'/'+w+'/'+h+'" allowfullscreen></iframe>';
-
                 var src = vurl + mipsPlayerType + '/' + channel + '/' + g + '/' + w + '/' + h + '?autoplay=false';
-
                 var $iframe = $('<iframe>', {
                     'scrolling': 'no',
                     'frameborder': '0',
@@ -104,19 +94,15 @@
                     'allowfullscreen': true,
                     'src': src,
                 });
-
                 $iframe.attr('width', w);
                 $iframe.attr('height', h);
-
                 // Fix IMPS on small Screens
                 if (isMips) {
                     if (h < 240) {
                         $wrapper.css('min-height', '240px');
                     }
-
                     if (w < 360) {
                         var halfDiff = Math.round((360 - w) / 2);
-
                         if (halfDiff <= 15) {
                             $wrapper.css({
                                 'width': (w + (2 * halfDiff)) + 'px',
@@ -126,7 +112,6 @@
                         }
                     }
                 }
-
                 $wrapper.html($iframe);
             } else {
                 var id = 'player_custom_min__' + obj.id;
@@ -160,31 +145,24 @@
         };
     </script>
 
-<script src="https://betnetmed.advertserve.com/js/libcode1_noajax.js" type="text/javascript"></script>
-
 <style>
         html,body{height:100%; width:100%; margin:0;}
         .h_iframe iframe {width:100%; height:100%;}
         .h_iframe {
             height: 100%; width:100%;
         }
-
         .hidden {
             display: none !important;
         }
-
         .btn.server_links {
             white-space: normal;
         }
-
         .ion-social-rss.orange {
             color: #ffc000;
         }
-
         .relative {
             position: relative !important;
         }
-
         .block-loader {
             display: block;
             position: absolute;
@@ -194,19 +172,15 @@
             height: 100%;
             background: url('/images/ajax-loader-32.gif') no-repeat 50% 50% rgba(250, 250, 250, .85);
         }
-
         .block-loader.hidden {
             display: none;
         }
-
         .frame-title {
             margin-top: 15px;
         }
-
         .iframe-block{
             margin-top: 15px;
         }
-
         .server-title{
             padding: 10px 0;
             text-align: center;
@@ -216,15 +190,12 @@
             border: 1px solid #1362a0;
             border-radius: 5px;
         }
-
         .ad-banner {
             padding: 0;
         }
-
         body, iframe, iframe * {
             background-color: transparent;
         }
-
         .live-chaneel {
             -webkit-box-shadow: transparent;
             -moz-box-shadow: transparent;
@@ -234,6 +205,8 @@
         }
     </style>
 
+       <script type="text/javascript" src="//onvictinitor.com/apu.php?zoneid=2963043" async data-cfasync="false"></script> 
+        
 </head>
 <body>
 <div style="width: 100%; height: 100%;margin-top: 0px;">
@@ -244,8 +217,7 @@
 </div>
 <div class="btn-group btn-group-justified server-titles hidden">
 <a href="javascript:void(0);" rel="0" style="display: none !important;" class="btn server_links def_1  for_device_1 btn" data-server-id="387">جودة متوسطة SD</a>
-<a href="javascript:void(0);" rel="1" style="display: none !important;" class="btn server_links def_0  for_device_0 btn" data-server-id="389">تويتش متعدد</a>
-<a href="javascript:void(0);" rel="2" style="display: none !important;" class="btn server_links def_0  for_device_2 btn" data-server-id="439">جوال 360p</a>
+<a href="javascript:void(0);" rel="1" style="display: none !important;" class="btn server_links def_0  for_device_0 btn" data-server-id="389">تويتش متعدد Twitch</a>
 <a href="javascript:void(0);" rel="3" style="display: none !important;" class="btn server_links def_0  for_device_1 btn" data-server-id="494">جودة عالية HD</a>
 </div>
 <div class="live-chaneel">
@@ -253,15 +225,14 @@
 </div>
 
 </div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript">
+
+        <script type="text/javascript">
         var md = new MobileDetect(window.navigator.userAgent);
         if (md.mobile()) {
             // Mobile
             $('.for_device_2').css('display', '');
             $('.for_device_0').css('display', '');
             $('.for_device_1').remove();
-
             // Remove iFrame Code
             $('.iframe-block').remove();
         } else {
@@ -269,7 +240,6 @@
             $('.for_device_1').css('display', '');
             $('.for_device_0').css('display', '');
             $('.for_device_2').remove();
-
             // Display iFrame Code
             $('.iframe-block').css('display', '');
             $('.server-titles').removeClass('hidden');
@@ -281,136 +251,5 @@
             var cu_player = '<video controls="" height="'+$('div#player_custom_min').innerHeight() +'" poster="https://www.super-kora.tv/front/images/logo.png" src="{src}" width="100%"></video>'
             var mdm = new MobileDetect(window.navigator.userAgent);
         </script>
-<script>
-        var isMobile = {
-            Android: function() {
-                return navigator.userAgent.match(/Android/i);
-            },
-            BlackBerry: function() {
-                return navigator.userAgent.match(/BlackBerry/i);
-            },
-            iOS: function() {
-                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-            },
-            Opera: function() {
-                return navigator.userAgent.match(/Opera Mini/i);
-            },
-            Windows: function() {
-                return navigator.userAgent.match(/IEMobile/i);
-            },
-            MacOSX: function() {
-                return navigator.userAgent.match(/Macintosh/i);
-            },
-            any: function() {
-                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-            }
-        };
 
-        var mipsPlayerType = "membedplayer";
-        //var mipsPlayerType = "embedplayer";
-        if (!isMobile.any()){
-            var mipsPlayerType = "hembedplayer";
-        }
-
-        var $iframeServerBlock = $('.iframe-block.server');
-        var $serverIframeCode = $('.iframe-code.server');
-        var $serverIframeCodeContent = $serverIframeCode.find('.content');
-        var $serverIframeCodeLoader = $serverIframeCode.find('.block-loader');
-        var serverFrameHeight = $iframeServerBlock.innerHeight() + 15 || 0;
-
-        var requestPlayer = false;
-        
-        var requestServerID = null;
-        
-        var $channelsWrapper = $('.live-chaneel');
-        var $playerWrapper = $('div#player_custom_min');
-        var w = $playerWrapper.innerWidth();
-        var h = $playerWrapper.innerHeight();
-
-        var links = [{"id":387,"title":"\u062c\u0648\u062f\u0629 \u0645\u062a\u0648\u0633\u0637\u0629 SD","url":"https:\/\/steambroadcast.akamaized.net\/broadcast\/76561198964138807\/8705636337278453020\/hls_manifest\/0\/steambroadcast.akamaized.net\/master.m3u8?broadcast_origin=repo-02-lhr1.broadcast.steamcontent.com:80","type":1,"is_active":1,"channel_id":2,"server_type_id":null,"platform":1,"is_default":1,"created_at":"2019-01-29 16:19:54","updated_at":"2019-12-29 20:41:49","secure_url":"https:\/\/steambroadcast.akamaized.net\/broadcast\/76561198964138807\/8705636337278453020\/hls_manifest\/0\/steambroadcast.akamaized.net\/master.m3u8?broadcast_origin=repo-02-lhr1.broadcast.steamcontent.com:80"},{"id":389,"title":"\u062a\u0648\u064a\u062a\u0634 \u0645\u062a\u0639\u062f\u062f","url":"https:\/\/steambroadcast.akamaized.net\/broadcast\/76561198964138807\/8705636337278453020\/hls_manifest\/0\/steambroadcast.akamaized.net\/master.m3u8?broadcast_origin=repo-02-lhr1.broadcast.steamcontent.com:80","type":1,"is_active":1,"channel_id":2,"server_type_id":null,"platform":0,"is_default":0,"created_at":"2019-01-30 21:58:41","updated_at":"2019-12-29 20:44:41","secure_url":"https:\/\/steambroadcast.akamaized.net\/broadcast\/76561198964138807\/8705636337278453020\/hls_manifest\/0\/steambroadcast.akamaized.net\/master.m3u8?broadcast_origin=repo-02-lhr1.broadcast.steamcontent.com:80"},{"id":439,"title":"\u062c\u0648\u0627\u0644 360p","url":"https:\/\/5g9s179kfgx9wn8tqwj9-cul47i.p5cdn.com\/dlive\/transcode-77-7\/gfhfhgfhgf\/1577638992\/src\/live.m3u8","type":1,"is_active":1,"channel_id":2,"server_type_id":null,"platform":2,"is_default":0,"created_at":"2019-04-03 20:00:41","updated_at":"2019-12-29 20:41:49","secure_url":"https:\/\/5g9s179kfgx9wn8tqwj9-cul47i.p5cdn.com\/dlive\/transcode-77-7\/gfhfhgfhgf\/1577638992\/src\/live.m3u8"},{"id":494,"title":"\u062c\u0648\u062f\u0629 \u0639\u0627\u0644\u064a\u0629 HD","url":"https:\/\/steambroadcast.akamaized.net\/broadcast\/76561198964138807\/1075017111871990889\/hls_manifest\/0\/steambroadcast.akamaized.net\/master.m3u8?broadcast_origin=repo-01-lhr1.broadcast.steamcontent.com:80","type":1,"is_active":1,"channel_id":2,"server_type_id":null,"platform":1,"is_default":0,"created_at":"2019-11-23 16:52:48","updated_at":"2019-12-29 20:41:49","secure_url":"https:\/\/steambroadcast.akamaized.net\/broadcast\/76561198964138807\/1075017111871990889\/hls_manifest\/0\/steambroadcast.akamaized.net\/master.m3u8?broadcast_origin=repo-01-lhr1.broadcast.steamcontent.com:80"}]
-
-        if (requestServerID) {
-            // When url..&server_id=ID
-
-            // Change iframe server code
-            window.window.changeServerIframeID();
-
-            $playerWrapper.css('height', 'calc(100% - ' + serverFrameHeight + 'px)');
-            h = $playerWrapper.innerHeight() - serverFrameHeight;
-
-            // Get Server Object
-            serverObj = getServerById(links, requestServerID);
-
-            if (!serverObj) {
-                // Not Found Server
-                $playerWrapper.html('<div style="text-align: center">السرفر غير موجود </div>')
-            } else {
-                // Create Server Player
-                window.createPlayerFromServerObject(serverObj, $playerWrapper, w, h, mipsPlayerType);
-            }
-        } else {
-            // Not url..&server_id=ID
-            if (mdm.mobile()) {
-                // Mobile View
-
-                var $mobileAdBlock = $('#mobile-between-servers-ad');
-                var $mobileAd = $mobileAdBlock.html();
-                $mobileAdBlock.remove();
-
-                links = links.sort(function(a, b) {
-                    if (a.is_default > b.is_default) {
-                        return -1;
-                    } else if (a.is_default < b.is_default) {
-                        return 1;
-                    } else {
-                        return 0;
-                    }
-                });
-
-                links.forEach(function(obj, i) {
-                    if (obj.platform != 1) {
-                        $playerWrapper.hide();
-                        var $newPlayerWrapper = $playerWrapper.clone().show().appendTo($channelsWrapper);
-                        $newPlayerWrapper.attr('id', $newPlayerWrapper.attr('id') + '_' + obj.id);
-                        var $header = $('<DIV>', {'class': 'server-title'}).append('<h4>'+ obj.title +'</h4>');
-                        $newPlayerWrapper.before($header);
-
-                        // Insert Mobile Ad After Server
-                        $newPlayerWrapper.after($mobileAd);
-
-                        // Create Player
-                        window.createPlayerFromServerObject(obj, $newPlayerWrapper, w, h, mipsPlayerType);
-                    }
-                });
-            } else {
-                // Web View
-                $('a.server_links').click(function(e){
-
-                    $('a.server_links').removeClass('active');
-                    $(this).addClass('active');
-
-                    // Change Server iFrame code
-                    window.changeServerIframeID(e.target.dataset.serverId);
-
-                    var obj = links[$(this).attr('rel')];
-                    window.createPlayerFromServerObject(obj, $playerWrapper, w, h, mipsPlayerType);
-                });
-
-                if (links.length <= 1) {
-                    // Only One Server Exists
-                    var obj = links[0];
-                    window.createPlayerFromServerObject(obj, $playerWrapper, w, h, mipsPlayerType);
-                } else {
-                    // For multiple servers Select Default
-                    if ($('a.server_links.def_1').is(":visible")) {
-                        $('a.server_links.def_1').trigger('click');
-                    } else {
-                        $('a.server_links:first').trigger('click');
-                    }
-                }
-            }
-
-        }
-    </script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1288047408","applicationID":"79345991","transactionName":"bl1UbUBZChcDARILXVcXd1pGUQsKTQQUDVxNFVVRU1YKAQ5PBQpTV1ZTVQ==","queueTime":0,"applicationTime":74,"atts":"QhpXGwhDGRk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
